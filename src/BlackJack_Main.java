@@ -41,14 +41,14 @@ public class BlackJack_Main {
 				newTotal += l;
 			
 			
-			} else if (newTotal > 21) {
+			} else if ((answer.equals("y") || answer.equals("Y")) && newTotal > 21) {
 				System.out.println("Card: " + l);
 				System.out.println("Total: " + newTotal);
 				System.out.println("Busted");
 				break;
 			}
 		
-			else {
+			  else if ((answer.equals("y") || answer.equals("Y")) && newTotal == 21) {
 				System.out.println("Card: " + l);
 				System.out.println("Total: " + newTotal);
 				System.out.println("Winner winner Chicken Dinner!");
