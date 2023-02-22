@@ -34,14 +34,21 @@ public class BlackJack_Main {
 				l = rand.nextInt(1, 10);
 				System.out.println("Total: " + newTotal);
 				newTotal += l;
-
-			} else if (newTotal >= 21) {
+			
+			
+			} else if (newTotal > 21) {
 				System.out.println("Card: " + l);
 				System.out.println("Total: " + newTotal);
 				System.out.println("Busted");
 				break;
 			}
-
+		
+			else {
+				System.out.println("Card: " + l);
+				System.out.println("Total: " + newTotal);
+				System.out.println("Winner winner Chicken Dinner!");
+				break;
+			}
 		}
 
 		System.out.println("Game Ended!");
