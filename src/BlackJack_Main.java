@@ -13,7 +13,8 @@ public class BlackJack_Main {
 		int total;
 		String answer = "";
 		int newTotal;
-
+		Boolean playing = true;
+		
 		f = rand.nextInt(1, 10);
 		s = rand.nextInt(1, 10);
 		l = rand.nextInt(1, 10);
@@ -21,9 +22,13 @@ public class BlackJack_Main {
 		total = f + s;
 		newTotal = total + l;
 
+		while(playing) {
+		
 		System.out.println("First cards: " + f + ", " + s);
 		System.out.println("Total: " + total);
 
+		
+		
 		while (!answer.equals("n") && !answer.equals("N")) {
 
 			System.out.println("Do you want to continue? (y/n): ");
@@ -48,9 +53,15 @@ public class BlackJack_Main {
 				System.out.println("Total: " + newTotal);
 				System.out.println("Winner winner Chicken Dinner!");
 				break;
+				}
 			}
+			
+			System.out.println("Play again? (y/n): ");
+			playing = scnr.nextLine().trim().equalsIgnoreCase("y");
+			
 		}
-
+		
+		
 		System.out.println("Game Ended!");
 
 		scnr.close();
