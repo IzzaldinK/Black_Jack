@@ -58,7 +58,11 @@ public class BlackJack_Main {
 			
 			System.out.println("Play again? (y/n): ");
 			playing = scnr.nextLine().trim().equalsIgnoreCase("y");
-			
+			l = rand.nextInt(1, 10);
+			f = rand.nextInt(1, 10);
+			s = rand.nextInt(1, 10);
+			total = f + s;
+			newTotal = total + l;
 		}
 		
 		
