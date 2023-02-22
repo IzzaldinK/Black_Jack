@@ -26,7 +26,7 @@ public class BlackJack_Main {
 
 		while (!answer.equals("n") && !answer.equals("N")) {
 
-			System.out.println("Do you want to continue: ");
+			System.out.println("Do you want to continue? (y/n): ");
 			answer = scnr.nextLine();
 
 			if ((answer.equals("y") || answer.equals("Y")) && newTotal < 21) {
