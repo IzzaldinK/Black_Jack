@@ -66,7 +66,7 @@ public class BlackJack {
 				  newDealer += dealer;
 				  System.out.println("\nDealer Draws: " + dealer);
 				  dealer = rand.nextInt(1,11);
-				  System.out.println("Dealer Totoal: " + newDealer);
+				  System.out.println("Dealer Total: " + newDealer);
 				  
 		while (answer.equals("n") && newDealer < newTotal || newDealer < 17) {
 			 
@@ -81,14 +81,14 @@ public class BlackJack {
 			
 			System.out.println("\nDealer Draws: " + dealer);
 			dealer = rand.nextInt(1,10);
-			System.out.println("Dealer Totoal: " + newDealer);
+			System.out.println("Dealer Total: " + newDealer);
 			
 			}  
 			 if (answer.equals("n") && (newDealer > newTotal && newDealer <= 21)) {
 				  
 				 System.out.println("\nDealer Draws: " + dealer);
 					dealer = rand.nextInt(1,11);
-					System.out.println("Dealer Totoal: " + newDealer);
+					System.out.println("Dealer Total: " + newDealer);
 				  System.out.println("\nDealer wins! Better luck next time!");
 				  break;
 			  }
@@ -98,7 +98,7 @@ public class BlackJack {
 				  
 				 System.out.println("\nDealer Draws: " + dealer);
 					dealer = rand.nextInt(1,11);
-					System.out.println("Dealer Totoal: " + newDealer);
+					System.out.println("Dealer Total: " + newDealer);
 				  System.out.println("\nThe Game is a draw! PUSH");
 				  break;
 			  }
@@ -111,7 +111,7 @@ public class BlackJack {
 				  
 				 System.out.println("\nDealer Draws: " + dealer);
 					dealer = rand.nextInt(1,11);
-					System.out.println("Dealer Totoal: " + newDealer);
+					System.out.println("Dealer Total: " + newDealer);
 				  System.out.println("\nYou Beat the Dealer! Winner");
 				  break;
 				  
